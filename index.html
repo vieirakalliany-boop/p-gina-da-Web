@@ -77,6 +77,7 @@ footer{
     <p class="nota">★★★★★</p>
     <p>Conhecido pelo seu estilo agressivo e pelas ultrapassagens espetaculares. É um dos pilotos mais vitoriosos da MotoGP.</p>
     <button>👍​<span>0</span></button>
+    <button>👎<span>0</span></button>
 </div>
 
 <div class="card">
@@ -85,6 +86,7 @@ footer{
     <p class="nota">★★★★★</p>
     <p>Campeão mundial com uma pilotagem consistente e muito rápida, sempre brigando pelas primeiras posições.</p>
     <button>👍​<span>0</span></button>
+    <button>👎<span>0</span></button>
 </div>
 
 <div class="card">
@@ -93,6 +95,7 @@ footer{
     <p class="nota">★★★★☆</p>
     <p>Piloto francês famoso por sua velocidade em voltas rápidas e por seu talento nas classificações.</p>
     <button>👍​<span>0</span></button>
+    <button>👎<span>0</span></button>
 </div>
 
 <div class="card">
@@ -101,6 +104,7 @@ footer{
     <p class="nota">★★★★☆</p>
     <p>Uma das maiores promessas da MotoGP, chamando atenção pela coragem e habilidade desde sua estreia.</p>
     <button>👍​<span>0</span></button>
+    <button>👎<span>0</span></button>
 </div>
 
 </main>
@@ -111,14 +115,18 @@ footer{
 
 </body>
 <script>
-    const botao = document.querySelector("button");
-    botao.addEventListener("click", botaoClicado);
+    // Seleciona todos os botões da página
+    const botoes = document.querySelectorAll("button");
 
-function botaoClicado() {
+    botoes.forEach(function(botao) {
+    botao.addEventListener("click", function() {
     console.log("fui clicado");
     let texto = botao.querySelector("span");
-    texto.textContent++;
-}
 
+    // Converte o texto atual para número, soma +1 e atualiza o elemento
+    let valorAtual = parseInt(texto.textContent);
+    texto.textContent = valorAtual + 1;
+    });
+    });
 </script>
 </html>
