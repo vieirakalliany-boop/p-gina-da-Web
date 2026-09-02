@@ -1,0 +1,52 @@
+body{
+    font-family:Verdana, sans-serif;
+    margin:0;
+    background:#f2f2f2;
+}
+
+header{
+    background:#c1121f;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+header p{
+    color:#ffd60a;
+}
+
+main{
+    width:90%;
+    max-width:900px;
+    margin:30px auto;
+}
+
+.card{
+    background:white;
+    padding:20px;
+    margin-bottom:20px;
+    border-left:8px solid #c1121f;
+    border-radius:10px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+}
+
+.card h2{
+    color:#c1121f;
+}
+
+.equipe{
+    color:#555;
+    font-style:italic;
+}
+
+.nota{
+    color:#ff9500;
+    font-size:20px;
+}
+
+footer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:15px;
+}
